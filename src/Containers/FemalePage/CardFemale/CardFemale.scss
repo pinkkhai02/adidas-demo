@@ -1,0 +1,54 @@
+@import '../../../Styles/variable.scss';
+
+.card-container {
+  .row-two-card {
+
+    .card-wrapper {
+      text-decoration: none;
+
+      .card-content {
+        height: 100%;
+
+        .card-media {
+          width: 100%;
+        }
+
+        .content-teaser {
+          .title-card {
+            color: $bs-black;
+            font-size: 1.6rem;
+            font-weight: 500;
+          }
+
+          .summary-card {
+            font-size: 1.6rem;
+            color: $bs-black;
+          }
+
+          .button-card {
+            margin-top: 15px;
+            ;
+
+            & button {
+              display: flex;
+              align-items: center;
+              border: 1px solid $bs-black;
+              outline: none;
+              background-color: $bs-white;
+              min-height: 50px;
+              padding: 0 15px;
+              font-size: 1.6rem;
+              color: $bs-black;
+              text-transform: uppercase;
+              font-weight: 600;
+            }
+
+            & i {
+              margin: 20px 0 15px 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

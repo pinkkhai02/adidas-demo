@@ -1,0 +1,192 @@
+@import '../../../Styles/variable.scss';
+
+.swiper {
+  width: 100%;
+  height: 100%;
+
+  .swiper-button-prev{
+    background: $bs-white;
+    border: 1px solid $bs-black;
+    z-index: 5;
+    width: 56px;
+    height: 50px;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/545/545680.png);
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    background-position: center;
+
+    &::after{
+      display: none;
+      
+    }
+  }
+
+  .swiper-button-next{
+    background: $bs-white;
+    border: 1px solid $bs-black;
+    z-index: 5;
+    width: 56px;
+    height: 50px;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/545/545682.png);
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    background-position: center;
+   
+
+    &::after{
+      display: none;
+    }
+  }
+}
+  
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+
+  
+}
+
+
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.slide-newArrival {
+
+  .wrapper-slide {
+    padding: 20px 15px;
+
+    .heading-slide {
+      padding-bottom: 2rem;
+
+      .title-slide {
+        font-size: 4.5rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-top: 4rem;
+        margin-bottom: 0;
+
+      }
+    }
+  }
+
+  .container-slide{
+    height: 100%;
+    width: 100%;
+  }
+
+  .product-card{
+    border: 1px solid transparent;
+
+    &:hover{
+      border: 1px solid $bs-black;
+      .product-card-content-badges-wrapper{
+        margin-bottom : 10px;
+      }
+    }
+    .product-card__assets{
+      position: relative;
+      border-bottom: 0;
+      background: #e9ecef;
+
+      .hockeycard-link{
+        color: inherit;
+        cursor: pointer;
+        text-decoration: none;
+        & img{
+          display: block;
+          width: 100%;
+        }
+      }
+
+      .product-card__wishlist{
+        position: absolute;
+        top: 0px;
+        right: 15px;
+        padding: 16px 0 16px 0;
+        & i{
+          color: #444445;
+        }
+      }
+
+      .product-card-content-badges-wrapper{
+        color: inherit;
+        cursor: pointer;
+        text-decoration: none;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        .badge-container{
+          position: relative;
+          margin-left: 5px;
+          bottom: 5px;
+          top: 5px;
+          width: fit-content;
+          transition: transform .2s ease;
+          .price-product{
+            margin-top: 5px;
+            background-color: #fff;
+            padding: 2px 5px 2px 5px;
+            .price-item{
+              font-size: 14px;
+              line-height: 20px;
+            }
+          }
+        }
+      }
+    }
+
+    & a{
+      color: inherit;
+      cursor: pointer;
+      text-decoration: none;
+      .product-card__details{
+        padding: 10px 10px 20px 10px;
+        clear: both;
+        display: block;
+        overflow: auto;
+        .product-card__title{
+          margin-bottom: 0;
+          margin-top: 0;
+          font-size: 14px;
+          line-height: 20px;
+          text-align: left;
+        }
+
+        .product-card-category{
+          margin-bottom: 0;
+          margin-top: 0;
+          color: #767677;
+          flex: 1 1 auto;
+          font-size: 12px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          text-align: left;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@import "../../../Styles/variable.scss";
+
+.top-bar {
+  height: 3rem;
+  background-color: $bs-black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 65px 0 65px;
+
+  p {
+    cursor: pointer;
+    color: $bs-white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

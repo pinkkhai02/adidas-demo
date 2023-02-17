@@ -1,0 +1,69 @@
+@import "../../../Styles/variable.scss";
+
+.component-waper{
+  width: 100%;
+  position: relative;
+  .wapper-banner{
+    position: relative;
+    display: flex;
+    .player{
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .content-left{
+    padding: 100px;
+    justify-content: flex-start;
+    position: absolute;
+    top:0;
+    .poster-content{
+      justify-content: center;
+      height: auto;
+      padding: 0;
+      text-align: left;
+      .title{
+        text-transform: uppercase;
+        color: $bs-white;
+        font-size: 4rem;
+        font-weight: 600;
+        line-height: 32px;
+        margin: 0 0 10px ;
+        text-align: left;
+      }
+      .summary{
+        color: $bs-white;
+        font-size: 2rem;
+        line-height: 24px;
+      }
+
+      .button{
+        margin: 15px 0;
+        
+        &-item{
+          background-color: $bs-white;
+          width: 190px;
+          padding: 13px 0;
+          display: flex;
+          align-items: center;
+          & a {
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.6rem;
+            color: $bs-black;
+            text-transform: uppercase;
+            font-weight: 500;
+            
+          }
+
+          & i{
+            font-size: 2rem;
+
+          }
+        }
+
+       
+      }
+    }
+  }
+}

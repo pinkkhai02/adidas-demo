@@ -1,0 +1,134 @@
+@import '../../../src/Styles/variable.scss';
+
+.footer {
+  margin-top: 50px;
+
+  .footer-newsletter{
+    width: 100%;
+    overflow: hidden;
+    color: #000;
+    background-color: #ede734;
+    margin: 40px 0;
+    .container{
+      max-width: 960px;
+    }
+    .footer-newsletter-subscribe, .footer-newsletter-btn {
+      padding: 40px 0;
+    }
+
+    .footer-newsletter-subscribe h2 {
+      font-size: 3rem;
+    }
+
+    .footer-newsletter-btn button {
+      position: relative;
+      border: none;
+      outline: none;
+      font-size: 1.6rem;
+      background-color: $bs-black;
+      color: $bs-white;
+      min-height: 50px;
+      padding: 0 40px;
+
+      &::before{
+        content: '';
+        position: absolute;
+        border-bottom: 1px solid $bs-black;
+        border-left: 1px solid $bs-black;
+        bottom: -3px;
+        height: 3px;
+        left: 3px;
+        width: 100%;
+      }
+
+      &::after{
+        content: '';
+        position: absolute;
+        border-top: 1px solid $bs-black;
+        border-right: 1px solid $bs-black;
+        height: 100%;
+        right: -3px;
+        top: 3px;
+        width: 3px;
+      }
+
+      & i{
+        margin-left: 15px;
+      }
+    }
+    .footer-newsletter-btn button:hover {
+      color: #767677;
+    }
+     
+    }
+  
+
+  .container {
+    max-width: 1010px;
+    .footer-list {
+      padding-left: 0;
+        &:last-child{
+          margin-right: 0;
+        }
+
+      .footer-list__item h2 {
+        font-size: 2rem;
+        color: $bs-black;
+        margin-bottom: 30px;
+      }
+
+      .footer-list__item ul {
+        padding-left: 0;
+
+        & li {
+          list-style: none;
+          font-size: 1.4rem;
+          margin: 10px 0;
+
+          & a {
+            text-decoration: none;
+            color: $bs-black;
+
+            & img {
+              width: 160px;
+              height: 110px;
+            }
+
+            .logo-media{
+              width: auto;
+              height: auto;
+              margin-bottom: 2px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer-bottom{
+    background-color: #363738;
+    &__list {
+      display: flex;
+      padding: 10px 0;
+      margin-bottom: 0;
+      position: relative;
+      justify-content: center;
+
+      &-item{
+        list-style: none;
+        font-size: 1.4rem;
+        margin: 10px 0;
+        padding: 0 15px;
+        & a{
+          text-decoration: none;
+          color: #c8ccbb;
+          font-weight: 300;
+        }
+        & span{
+          color: #c8ccbb;
+          margin-left: 16px;
+        }
+      }
+    }
+  }
+}

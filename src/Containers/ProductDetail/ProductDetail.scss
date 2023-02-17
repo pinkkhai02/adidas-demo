@@ -1,0 +1,308 @@
+@import "../../Styles/variable.scss";
+
+.content-wrapper-detail {
+  .content{
+    padding: 0;
+    .gallery-section {
+      width: 100%;
+      position: relative;
+  
+      .breadcrumbs_container { 
+        // margin: 20px 0;
+        display: flex;
+        position: absolute;
+        top: 30px;
+        left: 20px;
+        z-index: 55;
+        text-shadow: rgb(233 236 239) 1px 1px 0px;
+        
+  
+        .breadcrumb_item {
+          list-style: none;
+  
+          & a {
+            // text-decoration: none;
+            color: var(--black-color);
+            font-size: 1.6rem;
+            & i{
+              font-size: 1.6rem;
+            }
+            .back__text{
+              margin-right: 15px;
+            }
+  
+            &:hover {
+              color: $bs-white;
+              background-color: $bs-black;
+            }
+          }
+  
+          & span {
+            margin: 0 6px;
+            font-size: 1.6rem;
+          }
+        }
+      }
+      .navigation-target-gallery{
+        padding: 0;
+        .image_grid{
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          position: relative;
+          user-select: none;
+          text-align: center;
+          // margin-bottom: 1px;
+          .image-grid__container{
+            
+            cursor: url("https://www.adidas.com.vn/glass/react/9416edb/assets/img/icon-adidas-cursor-zoom.svg") 24 24, auto;
+            padding: 1px;
+            .view-cell-container{
+              padding: 0px;
+              .image-viewer__view-2{
+                padding: 0;
+                overflow: hidden;
+                height: 100%;
+                // background-color: #edeff0;
+                position: relative;
+                text-align: center;
+              }
+              .image-viewer__view{
+                padding: 0;
+                overflow: hidden;
+                height: 100%;
+                background-color: #edeff0;
+                position: relative;
+                text-align: center;
+                .desktop-zoom{
+                  padding: 0;
+                  display: flex;
+                  justify-content: space-around;
+                  .image-viewer__desktop-zoom__content{
+                    padding: 0;
+                    min-width: 100%;
+                    min-height: 100%;
+                    min-width: 600px;
+                    margin: 0px auto;
+                    & img{
+                      height: 100%;
+                      width: 100%;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        
+      }
+    }
+  }
+  
+
+  .sidebar-wrapper{
+    padding: 0;
+    .sidebar{
+      position: sticky;
+      // width: 320px;
+      padding: 60px 40px;
+      min-height: 100vh;
+      border-left: 1px solid rgb(233, 236, 239);
+      margin-right: 0;
+      .product-description{
+        margin-bottom: 0px;
+        // background-color: rgb(237, 239, 240);
+        // display: flex;
+        // flex-flow: row wrap;
+        // padding: 10px 20px;
+        .pre-header{
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 5px;
+          & span{
+            font-size: 1.6rem;
+          }
+          .rating-stars-button{
+            border: 0;
+            background-color: transparent;
+            & :hover{
+              color: $bs-white;
+              background-color: $bs-black;
+            }
+          }
+        }
+
+        .product-title span{
+          text-transform: uppercase;
+          font-size: 4.2rem;
+          line-height: 38px;
+          font-weight: 400;
+        }
+
+        .product-price span{
+          font-size: 18px;
+          line-height: 24px;
+          font-style: normal;
+          font-weight: 600;
+          margin-bottom: 0px;
+        }
+      }
+      .buy-section{
+        margin-top: 40px;
+        .size-selector{
+          // display: flex;
+          // justify-content: space-between;
+          align-items: baseline;
+          position: relative;
+          .heading-container span{
+            font-weight: bold;
+            font-size: 1.6rem;
+          }
+          .sizes{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+            margin-top: 10px;
+            .label-size{
+              border: 1px solid #d7dadd;
+              // border-left: none;
+              margin-bottom: -1px;
+              height: 40px;
+              display: flex;
+              justify-content: center;
+              text-align: center;
+              align-items: center;
+              line-height: 1em;
+              font-size: 1.4rem;
+              cursor: pointer;
+              // width: 25%;
+              &:hover{
+                color: $bs-white;
+                background-color: $bs-black;
+              }
+            } 
+            .label-size.active {
+              color: $bs-white;
+              background-color: $bs-black;
+            }
+          }
+        }
+        .sizes-controls{
+          display: flex;
+          // justify-content: space-between;
+          flex-wrap: wrap;
+          align-items: center;
+          min-height: 19px;
+          margin-top: 10px;
+          
+          & i{
+            font-size: 1.4rem;
+            margin-right: 5px;
+          }
+          .size-chart-link{
+            display: inline-flex;
+            justify-content: flex-start;
+            align-items: center;
+            color: $bs-black;
+            text-decoration: none;
+            & span{
+              font-size: 1.6rem;
+            }
+            &:hover{
+              color: $bs-white;
+              background-color: $bs-black;
+            }
+          }
+        }
+
+        .add-to-bag{
+          margin-top: 40px;
+          display: flex;
+          justify-content: space-between;
+          justify-items: center;
+          .add-to-bag-button{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            border: none;
+            outline: none;
+            font-size: 1.6rem;
+            background-color: $bs-black;
+            color: $bs-white;
+            min-height: 50px;
+            padding: 0 20px;
+            text-transform: uppercase;
+
+            &::before{
+              content: '';
+              position: absolute;
+              border-bottom: 1px solid $bs-black;
+              border-left: 1px solid $bs-black;
+              bottom: -3px;
+              height: 3px;
+              left: 3px;
+              width: 100%;
+            }
+
+            &::after{
+              content: '';
+              position: absolute;
+              border-top: 1px solid $bs-black;
+              border-right: 1px solid $bs-black;
+              height: 100%;
+              right: -3px;
+              top: 3px;
+              width: 3px;
+            }
+            & i{
+              align-items: flex-end;
+            }
+            &:hover{
+              color: #767677;
+            }
+          }
+          .add-wishlist-container{
+            margin-left: 10px;
+            padding: 0;
+            .toggle_wishlist_button {
+              padding: 0 20px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex: 1;
+              height: 100%;
+              border: 1px solid $bs-black;
+              background-color: $bs-white;
+              & i{
+                font-size: 1.6rem;
+              }
+            }
+          }
+        }
+        .bottom-callout-stack{
+          margin-top: 40px;
+          .promotion-callout-wrapper{
+            display: flex;
+            align-items: center;
+            & i{
+              margin-right: 5px;
+              font-size: 1.4rem;
+            }
+            .maskable-hide-content{
+              font-size: 1.6rem;
+              color: $bs-black;
+
+              &:hover{
+                color: $bs-white;
+                background-color: $bs-black;
+              }
+            }
+          }
+        }
+      }
+    }
+    
+  }
+
+}
